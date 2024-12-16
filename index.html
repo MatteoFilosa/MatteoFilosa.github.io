@@ -55,20 +55,25 @@
             padding: 10px;
             background-color: #0078D7;
             color: white;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
 
         .image-container {
-            text-align: center;
-            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
 
         .image-container img {
-            max-width: 100%;
-            height: auto;
+            width: 200px;
+            height: 250px;
             border-radius: 8px;
+        }
+
+        .image-container p {
+            flex: 1;
         }
     </style>
 </head>
@@ -85,10 +90,11 @@
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-            <section class="image-container">
-                <img src="FilosaHD.jpg" width="400px" height = "500px" alt="yoooo">
-            </section>
-            <p>Hello! I'm Matteo Filosa, a PhD Student in Artificial Intelligence. Welcome to my personal website!</p>
+            <div class="image-container">
+                <img src="FilosaHD.jpg" alt="Matteo Filosa">
+                <p>Hello! I'm Matteo Filosa, a PhD Student in Artificial Intelligence. Welcome to my personal website!
+                </p>
+            </div>
         </section>
         <section id="portfolio">
             <h2>Portfolio</h2>
@@ -98,9 +104,6 @@
                 <li>Project 2</li>
                 <li>Project 3</li>
             </ul>
-        </section>
-        
-            
         </section>
         <section id="contact">
             <h2>Contact</h2>

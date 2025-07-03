@@ -45,7 +45,10 @@
     .card p { color: #555; }
 
     /* Contact */
-    .contact a { display: inline-block; margin-top: 0.5rem; background: #1a73e8; color: white; padding: 0.75rem 1.5rem; border-radius: 4px; }
+    .contact-info { margin-top: 1rem; }
+    .contact-info p { margin-bottom: 0.5rem; }
+    .social-links { display: flex; gap: 1rem; margin-top: 0.75rem; }
+    .social-links a { font-weight: 500; }
 
     /* Footer */
     footer { text-align: center; padding: 1rem; color: #777; font-size: 0.9rem; }
@@ -75,7 +78,11 @@
 
   <section class="section" id="publications">
     <h2>Publications</h2>
-    <p>Data fetched directly from <a href="https://orcid.org/0009-0004-8868-7907" target="_blank">ORCID</a></p>
+    <p>Data fetched directly from
+      <a href="https://orcid.org/0009-0004-8868-7907" target="_blank">
+        <img src="https://orcid.org/sites/default/files/images/orcid_24x24.png" alt="ORCID iD" style="vertical-align:middle; margin-right:4px;">ORCID
+      </a>
+    </p>
     <ul id="pub-list">
       <li>Loading publications...</li>
     </ul>
@@ -102,7 +109,17 @@
   <section class="section" id="contact">
     <h2>Get in Touch</h2>
     <p>If you’d like to collaborate or just say hello, drop me a line:</p>
-    <p class="contact"><a href="mailto:m.filosa@diag.uniroma1.it">m.filosa@diag.uniroma1.it</a></p>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:m.filosa@diag.uniroma1.it">m.filosa@diag.uniroma1.it</a></p>
+      <p><strong>Affiliation:</strong> Research Assistant at Sapienza University of Rome</p>
+      <p><strong>Workplace:</strong> Department of Computer Science, Sapienza University</p>
+      <div class="social-links">
+        <a href="https://github.com/matteofilosa" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/matteofilosa" target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com/matteofilosa" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/matteofilosa" target="_blank">Instagram</a>
+      </div>
+    </div>
   </section>
 
   <footer>
